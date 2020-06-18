@@ -101,5 +101,57 @@ ClassicEditor.defaultConfig = {
 	table: {
 		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
 	},
-	licenseKey: ''
+	licenseKey: '',
+	codeBlock: {
+		languages: [
+			{ language: 'html', label: 'Html', class: 'language-html' },
+			{ language: 'xml', label: 'XML', class: 'language-xml' },
+			{ language: 'svg', label: 'Svg', class: 'language-svg' },
+			{ language: 'CSS', label: 'Css', class: 'language-css' },
+			{
+				language: 'JavaScript',
+				label: 'JavaScript',
+				class: 'language-js'
+			},
+			{ language: 'Bash', label: 'Bash', class: 'language-bash' },
+			{ language: 'Shell', label: 'Shell', class: 'language-shell' },
+			{ language: 'C', label: 'C', class: 'language-c' },
+			{ language: 'CPP', label: 'C++', class: 'language-cpp' },
+			{
+				language: 'Docker',
+				label: 'Dockerfile',
+				class: 'language-docker'
+			},
+			{ language: 'Git', label: 'Git', class: 'language-git' },
+			{ language: 'Java', label: 'Java', class: 'language-java' },
+			{ language: 'JSON', label: 'Json', class: 'language-json' },
+			{ language: 'LaTeX', label: 'LaTeX', class: 'language-latex' },
+			{ language: 'Lua', label: 'LUA', class: 'language-lua' },
+			{
+				language: 'Makefile',
+				label: 'Makefile',
+				class: 'language-makefile'
+			},
+			{
+				language: 'Markdown',
+				label: 'Markdown',
+				class: 'language-markdown'
+			},
+			{ language: 'nginx', label: 'NGinx', class: 'language-nginx' },
+			{ language: 'Perl', label: 'Perl', class: 'language-perl' },
+			{ language: 'PHP', label: 'PHP', class: 'language-php' },
+			{ language: 'Python', label: 'Python', class: 'language-python' },
+			{ language: 'R', label: 'R', class: 'language-r' },
+			{ language: 'React JSX', label: 'ReactJs', class: 'language-jsx' },
+			{
+				language: 'React TSX',
+				label: 'TypeScript',
+				class: 'language-tsx'
+			},
+			{ language: 'Regex', label: 'Regex', class: 'language-regex' },
+			{ language: 'SAS', label: 'SAS', class: 'language-sas' },
+			{ language: 'XQuery', label: 'XQuery', class: 'language-xquery' },
+			{ language: 'YAML', label: 'YAML', class: 'language-yaml' }
+		]
+	}
 };
