@@ -6,8 +6,6 @@ import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
-import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
@@ -38,8 +36,6 @@ Editor.builtinPlugins = [
 	Autoformat,
 	BlockQuote,
 	Bold,
-	CKFinder,
-	CKFinderUploadAdapter,
 	Code,
 	CodeBlock,
 	Essentials,
@@ -66,40 +62,44 @@ Editor.builtinPlugins = [
 
 export default Editor;
 
-// // Editor configuration.
-// ClassicEditor.defaultConfig = {
-// 	toolbar: {
-// 		items: [
-// 			'heading',
-// 			'|',
-// 			'bold',
-// 			'italic',
-// 			'link',
-// 			'bulletedList',
-// 			'numberedList',
-// 			'|',
-// 			'indent',
-// 			'outdent',
-// 			'|',
-// 			'imageUpload',
-// 			'blockQuote',
-// 			'insertTable',
-// 			'mediaEmbed',
-// 			'undo',
-// 			'redo'
-// 		]
-// 	},
-// 	image: {
-// 		toolbar: [
-// 			'imageStyle:full',
-// 			'imageStyle:side',
-// 			'|',
-// 			'imageTextAlternative'
-// 		]
-// 	},
-// 	table: {
-// 		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
-// 	},
-// 	// This value must be kept in sync with the language defined in webpack.config.js.
-// 	language: 'en'
-// };
+// Editor configuration.
+ClassicEditor.defaultConfig = {
+	toolbar: {
+		items: [
+			'heading',
+			'|',
+			'bold',
+			'italic',
+			'link',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
+			'horizontalLine',
+			'imageUpload',
+			'blockQuote',
+			'insertTable',
+			'mediaEmbed',
+			'undo',
+			'redo',
+			'|',
+			'code',
+			'codeBlock',
+			'|',
+			'MathType',
+			'ChemType',
+			'subscript',
+			'superscript'
+		]
+	},
+	language: 'en',
+	image: {
+		toolbar: [ 'imageTextAlternative', 'imageStyle:full', 'imageStyle:side' ]
+	},
+	table: {
+		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
+	},
+	licenseKey: ''
+};
