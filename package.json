@@ -94,5 +94,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-code-block": "^19.0.1",
+    "@ckeditor/ckeditor5-horizontal-line": "^19.0.1",
+    "@wiris/mathtype-ckeditor5": "^7.21.0"
   }
 }
